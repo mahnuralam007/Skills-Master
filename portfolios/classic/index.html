@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Chen - Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a2a3a;
+            --secondary: #5c6b7f;
+            --bg: #ffffff;
+            --light-bg: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            color: var(--primary);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: var(--bg);
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Playfair Display', serif;
+            margin-top: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            padding: 80px 0 40px;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: #eee;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: #999;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--secondary);
+            font-weight: 300;
+        }
+
+        section {
+            padding: 60px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        section:last-child {
+            border-bottom: none;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-header h2 {
+            font-size: 2rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-header h2::after {
+            content: '';
+            display: block;
+            width: 40px;
+            height: 2px;
+            background: var(--primary);
+            margin: 10px auto 0;
+        }
+
+        .resume-item {
+            margin-bottom: 40px;
+        }
+
+        .resume-item h3 {
+            margin-bottom: 5px;
+            font-size: 1.4rem;
+        }
+
+        .company {
+            font-weight: bold;
+            color: var(--primary);
+        }
+
+        .date {
+            color: var(--secondary);
+            font-style: italic;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: inherit;
+        }
+
+        button {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-family: inherit;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        button:hover {
+            background: #2c4257;
+        }
+
+        footer {
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+            margin-top: 60px;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="profile-img">AC</div>
+            <h1>Alex Chen</h1>
+            <div class="subtitle">Senior Software Engineer & Architect</div>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <div class="section-header">
+                <h2>About Me</h2>
+            </div>
+            <p style="text-align: center; max-width: 700px; margin: 0 auto;">
+                I am a results-driven engineering leader with over 8 years of experience building scalable web
+                applications. My focus is on writing clean, maintainable code and designing resilient distributed
+                systems. I have successfully led teams at high-growth startups and established enterprises.
+            </p>
+        </section>
+
+        <section id="experience">
+            <div class="section-header">
+                <h2>Experience</h2>
+            </div>
+
+            <div class="resume-item">
+                <h3>Senior Full Stack Engineer</h3>
+                <span class="company">TechGiant Solutions</span>
+                <span class="date">2023 - Present</span>
+                <ul>
+                    <li>Architected and deployed a new microservices layer using Go and gRPC, reducing system latency by
+                        35%.</li>
+                    <li>Mentored a team of 5 junior developers, conducting code reviews and technical planning sessions.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="resume-item">
+                <h3>Software Developer</h3>
+                <span class="company">StartUp Inc</span>
+                <span class="date">2020 - 2023</span>
+                <ul>
+                    <li>Built the initial MVP using React and Node.js which secured Series A funding.</li>
+                    <li>Implemented CI/CD pipelines reducing deployment time from 1 hour to 10 minutes.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="section-header">
+                <h2>Contact</h2>
+            </div>
+            <div class="contact-form">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text">
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email">
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea rows="5"></textarea>
+                </div>
+                <button>Send Message</button>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            &copy; 2026 Alex Chen. All rights reserved.
+        </div>
+    </footer>
+</body>
+
+</html>
